@@ -8,17 +8,15 @@
 int main(void)
 {
 	int c;
-        int nl = 10;
+	int nl = 10;
 
 	for (c = 48; c < 58; c++)
-		putchar (c)
+		putchar (c);
 
 	for (c = 97; c < 103; c++)
-		putchar (c)
-
+		putchar (c);
 
 	putchar (nl);
 
 	return (0);
-
 }
