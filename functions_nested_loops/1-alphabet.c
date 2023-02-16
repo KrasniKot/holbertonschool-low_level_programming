@@ -2,9 +2,9 @@
 
 void print_alphabet(void);
 {
-	for (i = 97; c < 123; c++)
+	for (i = 97; c < 123; c++);
 	{
-		putchar (i)
+		putchar (i);
 	}
-	putchar (nl)
+	putchar (nl);
 }
