@@ -5,10 +5,10 @@
  *
  * Return: Always 0.
  */
-int main(void)
+void print_alphabet(void)
 {
-	int i;
+	char c;
+	for (c = 97; c < 123; c++)
+		_putchar(c)
 
-	print_alphabet(i);
-	return (0);
 }
