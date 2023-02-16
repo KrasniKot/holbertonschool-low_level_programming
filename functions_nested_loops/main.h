@@ -1,6 +1,7 @@
-#include <stdio.h>
-
-int main(void)
+void print_alphabet(void)
 {
-	void print_alphabet(void);
-}
+	for (i = 97; c > 123; c++)
+	{
+		putchar (i)
+	}
+
