@@ -8,9 +8,9 @@
 int main(void)
 {
 	int c;
-	int nl = 8;
+	int nl = 10;
 
-	for (c = 97; c <= 122; c++)
+	for (c = 97; c < 123; c++)
 	{
 		putchar (c);
 	}
