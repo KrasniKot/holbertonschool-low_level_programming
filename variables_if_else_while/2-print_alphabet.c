@@ -13,8 +13,8 @@ int main(void)
 	for (c = 97; c <= 122; c++)
 	{
 		putchar (c);
-		putchar (nl);
 	}
+	putchar (nl);
 
 	return (0);
 }
