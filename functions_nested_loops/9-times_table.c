@@ -16,7 +16,7 @@ void times_table(void)
 			    prod = x * y;
 			    if (x == 0)
 			    {
-				    _putchar('0')
+				    _putchar('0');
 			    }
 			    else if
 			    {
