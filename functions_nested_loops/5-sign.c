@@ -5,7 +5,7 @@
  * @n: print_sing variable.
  * Return: +, 1 if possitive, -, -1 if negative, 0 if zero.
  */
-int print_sign(int n);
+int print_sign(int n)
 {
 	int n;
 
