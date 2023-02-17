@@ -10,18 +10,19 @@ void print_to_98(int n)
 {
 	if (n < 99)
 	{
-		for (n = n; n < 99; n++)
+		for (n = n; n < 98; n++)
 		{
 			printf("%i, ", n);
 		}
+		printf("98");
 	}
 	else
 	{
-		for (n = n; n > 97; n--)
+		for (n = n; n > 98; n--)
 		{
 			printf("%i, ", n);
 		}
-
+		printf("98");
 	}
 	putchar (10);
 }
