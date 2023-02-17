@@ -7,7 +7,5 @@
  */
 int _abs(int a)
 {
-	int c = 2;
-
-	return ((a * c) / c);
+	return ((a * a) / a);
 }
