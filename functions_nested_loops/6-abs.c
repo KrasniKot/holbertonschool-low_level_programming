@@ -7,5 +7,14 @@
  */
 int _abs(int a)
 {
-	return ((a * a) / a);
+	int b = -2;
+	int c = 2;
+
+	if (a < 0)
+	{
+		return ((a * b) / c);
+	}
+	else
+	{
+		return (a);
 }
