@@ -3,7 +3,7 @@
 /**
  * _isalpha - checks if c is alpha.
  *@c: _isalpha variable.
- *Returns: 1 if alpha, 0 if nonalpha.
+ *Return: 1 if alpha, 0 if nonalpha.
  */
 int _isalpha(int c)
 {
