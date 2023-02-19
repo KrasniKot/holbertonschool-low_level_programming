@@ -15,7 +15,7 @@ int main(void)
 		{
 			for (k = i + 2; k < 10; k++)
 			{
-				if (j != k)
+				if (j != k && k > j)
 				{
 					putchar (i + '0');
 					putchar (j + '0');
@@ -26,8 +26,11 @@ int main(void)
 				{
 					break;
 				}
-				putchar (',');
-				putchar (' ');
+				if (j != k && k > j)
+				{
+					putchar (',');
+					putchar (' ');
+				}
 			}
 		}
 	}
