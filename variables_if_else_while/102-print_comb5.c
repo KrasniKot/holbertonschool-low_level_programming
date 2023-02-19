@@ -7,27 +7,27 @@
  */
 int main(void)
 {
-	int a, b, c, d;
+	int a, b;
 
-	for (a = 0; a < 10; a++)
+	for (a = 0; a < 99; a++)
 	{
-		for (b = 0; b < 9; b++)
+		for (b = a + 1; b < 100; b++)
 		{
-			for (c = 0; c < 10; c++)
+			putchar (a / 10 + '0');
+			putchar (a % 10 + '0');
+			putchar (',');
+			putchar (b / 10 + '0');
+			putchar (b % 10 + '0');
+
+			if (a == 98 && b == 99)
 			{
-				for (d = 0; d < 10; d++)
-				{
-					putchar (a + '0');
-					putchar (b + '0');
-					putchar (' ');
-					putchar (c + '0');
-					putchar (d + '0');
-					putchar (',');
-					putchar (' ');
-				}
+				break;
 			}
+			putchar (',');
+			putchar (' ');
 		}
 	}
+
 	putchar (10);
 
 	return (0);
