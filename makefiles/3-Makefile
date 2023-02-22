@@ -11,5 +11,4 @@ oclean:
 	$(RM) *.o
 fclean:
 	$(RM) *~ *.o $(NAME)
-re:
-	$(CC) $(SRC) -o $(NAME)
+re: all
