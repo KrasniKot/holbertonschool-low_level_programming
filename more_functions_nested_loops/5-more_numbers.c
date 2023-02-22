@@ -8,7 +8,6 @@
 int more_numbers(void)
 {
 	int i, j;
-	int n = 10;
 
 	for (j = 0; j < 10; j++)
 	{
@@ -24,6 +23,6 @@ int more_numbers(void)
 				_putchar (i + '0');
 			}
 		}
-		return (n);
+		return (10);
 	}
 }
