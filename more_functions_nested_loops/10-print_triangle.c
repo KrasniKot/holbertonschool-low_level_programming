@@ -17,11 +17,13 @@ void print_triangle(int size)
 	{
 		for (y = 0; y <= size; y++)
 		{
-			for (p = 0; p < t; p++)
+			if (y == 1)
 			{
-				_putchar (' ');
+				for (p = 0; p < t; p++)
+				{
+					_putchar (' ');
+				}
 			}
-
 			for (x = 1; x < s; x++)
 			{
 				_putchar ('#');
