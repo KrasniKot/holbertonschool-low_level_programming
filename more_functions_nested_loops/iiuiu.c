@@ -3,7 +3,7 @@
 void main(void)
 {
         int y, x, p;
-        int size = 15;
+        int size = 3;
         int s = 1;
         int t = size;
         
