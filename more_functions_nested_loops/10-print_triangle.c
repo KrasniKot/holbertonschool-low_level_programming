@@ -7,7 +7,7 @@
  */
 void print_triangle(int size)
 {
-	int y, x, p:
+	int y, x, p;
 
 	if (size <= 0)
 		_putchar (10);
