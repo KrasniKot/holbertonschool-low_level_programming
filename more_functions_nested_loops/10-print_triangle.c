@@ -9,7 +9,7 @@ void print_triangle(int size)
 {
 	int y, x, p;
 	int s = 1;
-	int t;
+	int t = 0;
 
 	if (size <= 0)
 		_putchar (10);
@@ -26,7 +26,8 @@ void print_triangle(int size)
 				_putchar ('#');
 			}
 			_putchar (10);
-			int t = size;
+			int t += size;
+
 			s++;
 			t--;
 		}
