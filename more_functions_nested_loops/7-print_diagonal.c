@@ -9,7 +9,7 @@ void print_diagonal(int n)
 {
 	int k, l;
 
-	for (k = 0; k > n; k++)
+	for (k = 0; k < n; k++)
 	{
 		if (n <= 0)
 		{
@@ -17,11 +17,13 @@ void print_diagonal(int n)
 		}
 		else
 		{
-			_putchar (92);
-			for (l = 0; l <= n; l++)
+			for (l = 0; l <= k; l++)
 			{
-				_putchar (' ');
+				_putchar (10);
 			}
+			_putchar (92);
+			_putchar (10);
+
 		}
 		_putchar (10);
 	}
