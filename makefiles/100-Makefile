@@ -8,8 +8,7 @@ all: $(OBJ)
 	$(CC) %(CFLAGS) &(OBJ) -o $(NAME)
 clean:
 	$(RM) *~ $(NAME)
-oclean:i
+oclean:
 	$(RM) $(OBJ)
-fclean: oclean
-	$(RM) $(OBJ)
+fclean: oclean clean
 re: oclean all
