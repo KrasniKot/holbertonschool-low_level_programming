@@ -7,17 +7,21 @@
 void rev_string(char *s)
 {
 	int k = 0;
+	int n = 0;
 
 	while (s[k])
 	{
 		k++;
 	}
+	
+	char l[k];
 
 	k -= 1;
 
 	while (k >= 0)
 	{
-		_putchar (s[k]);
+		l[n] = (s[k]);
+		n++;
 		k--;
 	}
 
