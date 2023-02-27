@@ -19,15 +19,14 @@ void rev_string(char *s)
 	for (e = 0; e < k; e++)
 	{
 		m[e] = s[k - y];
-		y--;
+		y++;
 	}
 
 	k -= 1;
 
-	while (k <= k)
+	while (n <= k)
 	{
-		s[n] = s[k];
-		k--;
+		s[n] = m[n];
 		n++;
 	}
 
