@@ -9,7 +9,7 @@
 char *_strcpy(char *dest, char *src)
 {
 	int i, k = 0;
-	int p = &dest;
+	int *p = &dest;
 
 	while (src[k])
 	{
