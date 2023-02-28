@@ -19,6 +19,6 @@ void puts_half(char *str)
 		{
 			k += 1;
 		}
-		_putchar (s[i]);
+		_putchar (str[i]);
 	}
 }
