@@ -15,7 +15,7 @@ char *_strcat(char *dest, char *src)
 		h++;
 	}
 
-	k -= 1
+	k -= 1;
 
 	for (i = k; i < h + k; i++)
 	{
