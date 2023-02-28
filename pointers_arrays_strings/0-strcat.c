@@ -3,7 +3,7 @@
 
 char *_strcat(char *dest, char *src)
 {
-	int i, , h = 0, k = 0;
+	int i, h = 0, k = 0;
 
 	while (dest[k])
 	{
