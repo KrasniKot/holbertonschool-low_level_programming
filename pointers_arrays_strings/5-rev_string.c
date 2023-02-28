@@ -22,5 +22,4 @@ void rev_string(char *s)
 		s[i] = s[k - i];
 		s[k - i] = l;
 	}
-	_putchar (10);
 }
