@@ -11,12 +11,12 @@ void puts2(char *str)
 
 	while (str[k])
 	{
-		k++
+		k++;
 	}
 
 	for (i = 0; i < k - 1; i++)
 	{
-		_putchar (k[i]);
+		_putchar (s[i]);
 		i++;
 	}
 	_putchar (10);
