@@ -13,7 +13,7 @@ void puts_half(char *str)
 		k++;
 	}
 
-	for (i = k / 2; i < k; i++)
+	for (i = k / 2 + 1; i < k - 1; i++)
 	{
 		if (k % 2 != 0)
 		{
