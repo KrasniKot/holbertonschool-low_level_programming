@@ -12,25 +12,15 @@ void puts_half(char *str)
 	{
 		k++;
 	}
-
-	if (k % 2 != 0)
+	for (i = k / 2 + 1; i < k - 1; i++)
 	{
-		for (i = k / 2 + 1; i < k - 1; i++)
+		if (k % 2 != 1)
 		{
+			i += 1;
 			k += 1;
-
-			_putchar (str[i]);
 		}
-		_putchar (10);
-	}
-	else
-	{
-		for (i = k / 2; i < k - 1; i++)
-		{
-			k += 1;
 
-			_putchar (str[i]);
-		}
-		_putchar (10);
+		_putchar (str[i]);
 	}
+	_putchar (10);
 }
