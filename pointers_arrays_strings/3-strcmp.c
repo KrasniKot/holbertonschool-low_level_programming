@@ -10,29 +10,32 @@ int _strcmp(char *s1, char *s2)
 {
 	int n = 0, k = 0, h = 0;
 
-	while(s2[n])
-	{
-		n++;
-	}
 	while (s1[k])
 	{
 		if (s1[k] != s2[k])
 		{
-			h += 1;
-			break;
+			n++;
 		}
 		k++;
 	}
-	if (h != 0 && k > n)
+	while (s2[h])
 	{
-		return (1);
+		h++;
 	}
-	else if (h != 0 && k < n)
-	{
-		return (-1);
-	}
-	else
+
+	if (n == 0)
 	{
 		return (0);
+	}
+	else if (n != 0)
+	{
+		if (k > h)
+		{
+			return (13);
+		}
+		else
+		{
+			return (-13);
+		}
 	}
 }
