@@ -2,14 +2,12 @@
 
 int _atoi(char *s)
 {
-	int i, k = 0;
-	
-	while (s[k])
+	int n = 1, i = 0;
+
+	while (*s++)
 	{
-		k++;
+		if (*s == '-');
+		{
+			n *= -1;
 
-	}
-
-	for (i = 0; i < k; i++)
-	{
-
+		}
