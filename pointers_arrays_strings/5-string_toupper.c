@@ -14,6 +14,6 @@ char *string_toupper(char *s)
 			*s -= 32;
 		}
 	}
-	return (*s);
+	return (s);
 }
 
