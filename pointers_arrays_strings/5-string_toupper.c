@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
- * string_toupper - turn lowercase into uppercase.
+ * string_toupper - turns lowercase into uppercase.
  * @s: array.
  * Return: 0.
  */
