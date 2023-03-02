@@ -8,16 +8,14 @@
  */
 char *_strchr(char *s, char c)
 {
-	char *n = '\0';
 	int i;
 
-	for (i = 0; s[i]; i++)
+	for (i = 0; s[i] >= '\0'; i++)
 	{
 		if (s[i] == c)
 		{
-			n = &s[i];
-			break;
+			return (s + i);
 		}
 	}
-	return (n);
+	return ('\0');
 }
