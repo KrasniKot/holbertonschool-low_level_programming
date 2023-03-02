@@ -15,7 +15,7 @@ char *leet(char *s)
 	{
 		for (n = 0; h[n]; n++)
 		{
-			if (s[i] == k[n] || s[i] == k[n - 32])
+			if (s[i] == k[n] || s[i] == k[n] - 32)
 			{
 				s[i] = h[n];
 			}
