@@ -1,8 +1,14 @@
 #include <stdio.h>
 
+/**
+ * _atoi - finds numbers in a string.
+ * @s: array.
+ * Return: number.
+ */
 int _atoi(char *s)
 {
-	int n = 0, sn = 0, i = 0;
+	int sn = 0, i = 0;
+	unsigned int n = 0;
 
 	while (s[i])
 	{
@@ -14,7 +20,7 @@ int _atoi(char *s)
 				break;
 			}
 		}
-	
+
 		else if (s[i] == '-')
 		{
 			sn++;
