@@ -1,19 +1,18 @@
+#include "main.h"
 #include <stdio.h>
 
-unsigned int _strspn(char *, char *);
-
 /**
- * main - check the code for Holberton School students.
+ * main - check the code
  *
  * Return: Always 0.
  */
 int main(void)
 {
-	char *s = "First, solve the problem. Then, write the code.";
-	char *f = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ";
-	unsigned int n;
+    char *s = "hello, world";
+    char *f = "world";
+    char *t;
 
-	n = _strspn(s, f);
-	printf("%u\n", n);
-	return (0);
+    t = _strpbrk(s, f);
+    printf("%s\n", t);
+    return (0);
 }
