@@ -12,16 +12,16 @@ char *_strstr(char *haystack, char *needle)
 
 	for (k = 0; haystack[k]; k++)
 	{
-		for (h = 0; needle[h]; h++)
+		if (haystack[k] == needle[0])
 		{
-			if (haystack[k] == needle[h] && haystack[k + 1] == needle[h + 1])
+			for (h = 0; haystack[k] == needle[h]; k++, h++)
 			{
-				if (haystack[k] != 0 && needle[h] != 0)
+				if (needle[h] == 0)
 				{
-					return (haystack + k);
+					return (haystack + k - h);
 				}
 			}
 		}
 	}
-	return ('\0');
+	return (0);
 }
