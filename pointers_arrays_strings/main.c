@@ -1,5 +1,4 @@
 #include <stdio.h>
-#include "main.h"
 
 unsigned int _strspn(char *, char *);
 
@@ -11,7 +10,7 @@ unsigned int _strspn(char *, char *);
 int main(void)
 {
 	char *s = "First, solve the problem. Then, write the code.";
-	char *f = "[]{}()";
+	char *f = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ";
 	unsigned int n;
 
 	n = _strspn(s, f);
