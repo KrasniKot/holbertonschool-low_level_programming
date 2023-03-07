@@ -13,8 +13,9 @@ int is_prime_number(int n)
 			|| n % 11 == 0
 			|| n < 2)
 	{
-	return (0);
+		return (0);
 	}
+
 	else
 	{
 		return (1);
