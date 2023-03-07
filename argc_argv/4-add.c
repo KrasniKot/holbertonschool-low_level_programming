@@ -9,13 +9,9 @@
  */
 int main(int argc, char *argv[])
 {
-	int j, k, i, a = 0;
+	int j, k, a = 0;
 
-	if (argc < 2)
-	{
-		return (0);
-	}
-	for (j = 0; argv[j]; j++)
+	for (j = 1; j < argc; j++)
 	{
 		for (k = 0; argv[j][k]; k++)
 		{
@@ -25,11 +21,10 @@ int main(int argc, char *argv[])
 				return (1);
 			}
 		}
+
+		a += atoi(argv[j]);
 	}
-	for (i = 0; i < argc; i++)
-	{
-		a += atoi(argv[i]);
-	}
+
 	printf("%i\n", a);
 	return (0);
 }
