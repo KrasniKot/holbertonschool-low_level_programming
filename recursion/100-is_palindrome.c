@@ -9,14 +9,16 @@
  */
 int palindrome(int i, int e, char *s)
 {
-	if (s[i] == s[e - 1])
+	if (s[i] != s[e - 1])
 	{
-		return (palindrome(i + 1, e - 1, s + 1));
+		return (0);
 	}
-	else
+	else if (i == e / 2)
 	{
-		return (i);
+		return (1);
 	}
+	return (palindrome(i + 1, e, s));
+
 }
 
 /**
