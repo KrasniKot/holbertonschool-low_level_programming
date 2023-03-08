@@ -1,4 +1,19 @@
 #include "main.h"
+#include <stdio.h>
+
+/**
+ * lenght - calculates the lenght of a string.
+ * @s: array.
+ * Return: lenght.
+ */
+int lenght(char *s)
+{
+	if (!*s)
+	{
+		return (0);
+	}
+	return (1 + lenght(s + 1));
+}
 
 /**
  * palindrome - test if @s is a palindrome.
@@ -9,9 +24,10 @@
  */
 int palindrome(int i, int e, char *s)
 {
-	if (s[i] != s[e - 1])
+	if (s[i] != s[e - i])
 	{
 		return (0);
+
 	}
 	else if (i == e / 2)
 	{
@@ -28,10 +44,5 @@ int palindrome(int i, int e, char *s)
  */
 int is_palindrome(char *s)
 {
-	if (!*s)
-	{
-		return (0);
-	}
-
-	return (palindrome(0, 1 + is_palindrome(s + 1), s));
+	return (palindrome(1, lenght(s) - 1, s));
 }
