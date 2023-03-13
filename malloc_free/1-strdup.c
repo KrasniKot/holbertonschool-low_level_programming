@@ -16,8 +16,12 @@ char *_strdup(char *str)
 
 	while (str[k])
 		k++;
+	k += 1;
 
-	k -= 1;
+	c = malloc(sizeof(char) * k);
+
+	if (!c)
+		return (NULL);
 
 	for (c = malloc(sizeof(char) * k); k >= 0; k--)
 		c[k] = str[k];
