@@ -11,13 +11,13 @@ char *_strdup(char *str)
 	int k = 0;
 	char *c;
 
-	c = malloc(sizeof(char) * k);
-
 	if (!str)
 		return (NULL);
 
 	while (str[k])
 		k++;
+
+	c = malloc(sizeof(char) * k);
 
 	if (!c)
 		return (NULL);
