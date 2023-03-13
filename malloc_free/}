@@ -1,0 +1,20 @@
+#include "main.h"
+#include <stdlib.h>
+
+char *str_concat(char *s1, char *s2)
+{
+	int k = 0, h = 0;
+	char *a;
+
+	while (s1[k])
+		k++;
+	while (s2[h])
+		h++;
+
+	a = malloc(sizeof(char) * (k + h + 1));
+
+	for (; h >= 0; h--)
+		a[k + h] = s2[h];
+	
+	return (a);
+}
