@@ -11,6 +11,8 @@ char *_strdup(char *str)
 	int k = 0;
 	char *c;
 
+	c = malloc(sizeof(char) * k);
+
 	if (!str)
 		return (NULL);
 
@@ -20,7 +22,7 @@ char *_strdup(char *str)
 	if (!c)
 		return (NULL);
 
-	for (c = malloc(sizeof(char) * k); k >= 0; k--)
+	for (; k >= 0; k--)
 		c[k] = str[k];
 
 	return (c);
