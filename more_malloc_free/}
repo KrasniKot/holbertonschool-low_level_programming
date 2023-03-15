@@ -1,0 +1,22 @@
+#include "main.h"
+#include <stdlib.h>
+
+char *string_nconcat(char *s1, char *s2, unsigned int n)
+{
+	char *c;
+	unsigned int k = 0, h = 0;
+
+	while (s1[k])
+		k++;
+	while (s2[h] && h <= n)
+		h++;
+
+	c = malloc(sizeof(char) * (k + h + 1));
+
+	if (!c)
+		return (NULL);
+
+	c[k] = 'n';
+
+	return (c);
+}
