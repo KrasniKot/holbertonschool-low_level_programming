@@ -1,3 +1,4 @@
-#ifndef ABS(x)
+#ifndef nnn
+#define nnn
 #define ABS(x) ((x) > 0 ? (x) : (-(x)))
-#endif
+#endif /*nnn*/
