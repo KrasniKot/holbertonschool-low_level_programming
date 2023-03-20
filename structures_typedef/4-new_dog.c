@@ -2,6 +2,27 @@
 #include <stdlib.h>
 
 /**
+ * dup - duplicates the given string.
+ * @x: given string.
+ * Return: pointer to duplicaed string.
+ */
+char *dup(char *x)
+{
+	int i;
+	char *a;
+
+	if (!x)
+		return (NULL);
+
+	a = malloc(sizeof(x));
+	if (!a)
+		return (NULL);
+	for (i = sizeof(x); i >= 0; i--)
+		a[i] = x[i];
+	return (a);
+}
+
+/**
  * new_dog - creates a new dog.
  * @name: name.
  * @age: age.
@@ -10,9 +31,6 @@
  */
 dog_t *new_dog(char *name, float age, char *owner)
 {
-	char *nname, *nowner;
-	int i, k;
-
 	dog_t *d;
 
 	if (!name || !owner)
@@ -20,26 +38,12 @@ dog_t *new_dog(char *name, float age, char *owner)
 	d = malloc(sizeof(dog_t));
 	if (!d)
 		return (NULL);
-
-	nname = malloc(sizeof(name));
-	for (i = sizeof(name); i >= 0; i--)
-		nname[i] = name[i];
-	nowner = malloc(sizeof(owner));
-	for (k = sizeof(owner); k >= 0; k--)
-		nowner[k] = owner[k];
-	d->name = nname;
+	d->name = dup(name);
 	if (!d->name)
-	{
-		free(d);
-		return (NULL);
-	}
+		return (free(d), NULL);
 	d->age = age;
-	d->owner = nowner;
+	d->owner = dup(owner);
 	if (!d->owner)
-	{
-		free(d->name);
-		free(d);
-		return (NULL);
-	}
+		return (free(d->name), free(d), NULL);
 	return (d);
 }
