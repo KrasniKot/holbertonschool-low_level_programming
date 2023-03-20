@@ -8,16 +8,18 @@
  */
 char *dup(char *x)
 {
-	int i;
+	int i = 0;
 	char *a;
 
 	if (!x)
 		return (NULL);
 
-	a = malloc(sizeof(x));
+	while (x[i])
+		i++;
+	a = malloc(sizeof(char) + i + 1);
 	if (!a)
 		return (NULL);
-	for (i = sizeof(x); i >= 0; i--)
+	for (; i >= 0; i--)
 		a[i] = x[i];
 	return (a);
 }
