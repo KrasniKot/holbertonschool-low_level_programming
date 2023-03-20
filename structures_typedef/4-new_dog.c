@@ -12,11 +12,12 @@ dog_t *new_dog(char *name, float age, char *owner)
 {
 	char *nname, *nowner;
 	int i, k;
-	
+
 	if (!name || !owner)
 		return (NULL);
 
 	dog_t *d;
+
 	d = malloc(sizeof(dog_t));
 
 	if (!d)
