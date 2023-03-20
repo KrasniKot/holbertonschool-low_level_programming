@@ -1,12 +1,12 @@
 #ifndef n
 #define n
-/*
+/**
  * struct dog - dog information.
- * @name: name.
- * @age: age.
- * @owner: owner;
+ * @name: Name.
+ * @age: Age.
+ * @owner: Owner.
  */
-typedef struct dog
+struct dog
 {
 	char *name;
 	float age;
