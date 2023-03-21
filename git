@@ -1,5 +1,5 @@
 #!/bin/bash
 git add .
 read -p commit: 
-git commit -m commit
+git commit -m echo$(commit)
 git push
