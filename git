@@ -1,5 +1,5 @@
 #!/bin/bash
 git add .
-read -p commit: 
-git commit -m echo$(commit)
+read var
+git commit -m $var
 git push
