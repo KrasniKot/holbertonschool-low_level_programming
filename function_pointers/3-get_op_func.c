@@ -1,5 +1,11 @@
 #include "3-calc.h"
 #include <string.h>
+
+/**
+ * get_op_func - chechs if @s is a valid option.
+ * @s: byte.
+ * Return: A pointer to chossen function, 0 if fails.
+ */
 int (*get_op_func(char *s))(int, int)
 {
 	op_t ops[] = {
