@@ -32,7 +32,7 @@ void print_str(va_list l)
 {
 	if (!l)
 	{
-		printf("(nill)");
+		printf("(nil)");
 		return;
 	}
 	printf("%s", va_arg(l, char *));

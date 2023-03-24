@@ -1,4 +1,5 @@
 #!/bin/bash
+rm .*.swp
 git add .
 read var
 git commit -m $var
