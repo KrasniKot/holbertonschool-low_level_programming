@@ -24,7 +24,6 @@ void print_flt(va_list l)
 {
 	printf("%.f", va_arg(l, double));
 }
-
 /**
  * print_str - prints a string.
  * @l: string.
@@ -33,20 +32,12 @@ void print_str(va_list l)
 {
 	printf("%s", va_arg(l, char *));
 }
-
 /**
  * print_all - call the concerned function.
  * @format:  list of types of arguments.
  */
 void print_all(const char * const format, ...)
 {
-	int i = 0, j = 0;
-
-	va_list (l);
-	char *separator = "";
-
-	va_start(l, format);
-
 	typp pfs[] = {
 		{"c", print_chr},
 		{"i", print_int},
@@ -55,6 +46,11 @@ void print_all(const char * const format, ...)
 		{NULL, NULL}
 	};
 
+	int i = 0, j = 0;
+	char *separator = "";
+	va_list (l);
+
+	va_start(l, format);
 	while (format[i] && format)
 	{
 		while (pfs[j].a)
