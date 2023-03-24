@@ -7,7 +7,7 @@
 typedef struct fc
 {
 	char *a;
-	void (*fs);
+	void (*fs)(va_list l);
 } typp;
 
 int sum_them_all(const unsigned int n, ...);
