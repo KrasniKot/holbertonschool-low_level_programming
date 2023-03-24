@@ -30,6 +30,11 @@ void print_flt(va_list l)
  */
 void print_str(va_list l)
 {
+	if (!l)
+	{
+		printf("(nill)");
+		return;
+	}
 	printf("%s", va_arg(l, char *));
 }
 /**
@@ -48,6 +53,7 @@ void print_all(const char * const format, ...)
 
 	int i = 0, j = 0;
 	char *separator = "";
+
 	va_list (l);
 
 	va_start(l, format);

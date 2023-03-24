@@ -3,7 +3,6 @@
 
 #include <stdarg.h>
 #include <stdio.h>
-
 typedef struct fc
 {
 	char *a;
