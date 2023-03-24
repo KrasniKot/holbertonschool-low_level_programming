@@ -22,7 +22,7 @@ void print_int(va_list l)
  */
 void print_flt(va_list l)
 {
-	printf("%.f", va_arg(l, double));
+	printf("%f", va_arg(l, double));
 }
 /**
  * print_str - prints a string.
