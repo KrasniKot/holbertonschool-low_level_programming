@@ -3,6 +3,12 @@
 
 #include <stdarg.h>
 #include <stdio.h>
+
+/**
+ * struct fc - calls concerned function.
+ * @a: type.
+ * @fs: pointer to function.
+ */
 typedef struct fc
 {
 	char *a;

@@ -1,4 +1,5 @@
 #!/bin/bash
+rm main.c
 rm .*.swp
 git add .
 read var

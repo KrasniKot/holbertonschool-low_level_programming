@@ -30,12 +30,14 @@ void print_flt(va_list l)
  */
 void print_str(va_list l)
 {
-	if (!l)
+	char *s = va_arg(l, char *);
+
+	if (!s)
 	{
 		printf("(nil)");
 		return;
 	}
-	printf("%s", va_arg(l, char *));
+	printf("%s", s);
 }
 /**
  * print_all - call the concerned function.
