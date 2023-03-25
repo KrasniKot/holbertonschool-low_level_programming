@@ -59,7 +59,7 @@ void print_all(const char * const format, ...)
 	va_list (l);
 
 	va_start(l, format);
-	while (format && format[i])
+	while (format[i] && format)
 	{
 		while (pfs[j].a)
 		{
