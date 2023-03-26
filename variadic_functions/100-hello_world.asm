@@ -1,8 +1,16 @@
-global _start
+section .text
+	global main
 
-section .text:
-	
+main:
+	mov edx, len
+	mov ecx, msg
+	mov ebx, 1
+	mov eax, 4
+	int 0x80
 
-section .data:
-	message: db "Hello, World", 10
-	message_lenght equ $-message
+	mov eax, 0
+	int 0x80
+
+section .data
+	msg db "Hello, World", 0xa
+	len: equ $ - msg
