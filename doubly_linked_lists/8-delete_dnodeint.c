@@ -22,14 +22,14 @@ int delete_dnodeint_at_index(dlistint_t **head, unsigned int index)
 
 	if (!hc->prev)
 	{
-		*head = (*head)->next;
+		*head = hc->next;
 		if (*head)
 			(*head)->prev = NULL;
 	}
 	else
 	{
 		hc->prev->next = hc->next;
-		if (!hc->next)
+		if (hc->next)
 			hc->next->prev = hc->prev;
 	}
 
