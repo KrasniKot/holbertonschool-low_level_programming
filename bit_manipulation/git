@@ -2,5 +2,5 @@
 rm .*.swp a.out *main.c
 git add .
 read var
-git commit -m $var
+git commit -m "$var"
 git push
