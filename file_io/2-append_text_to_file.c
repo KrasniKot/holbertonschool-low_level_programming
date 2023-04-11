@@ -14,11 +14,10 @@ int append_text_to_file(const char *filename, char *text_content)
 	if (!filename || file == -1)
 		return (-1);
 
-	while (text_content[i])
+	while (text_content && text_content[i])
 		i++;
 
-	if (text_content)
-		wfile = write(file, text_content, i);
+	wfile = write(file, text_content, i);
 
 	if (wfile == -1)
 		return (-1);
