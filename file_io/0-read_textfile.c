@@ -20,8 +20,10 @@ ssize_t read_textfile(const char *filename, size_t letters)
 	rifle = write(STDOUT_FILENO, buff, rifle);
 
 	if (rifle == -1)
+	{
 		free(buff);
 		return (0);
+	}
 
 	free(buff);
 	close(ofle);
