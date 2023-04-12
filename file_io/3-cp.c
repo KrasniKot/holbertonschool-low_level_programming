@@ -18,7 +18,7 @@ void close_f(int fd)
  * @argc: number of arguments given.
  * @argv: arguments given.
  */
-void main(int argc, char *argv[])
+int main(int argc, char *argv[])
 {
 	int ofle_from = open(argv[1], O_RDONLY);
 	int ofle_to = open(argv[2], O_WRONLY | O_CREAT | O_TRUNC, 0664);
@@ -46,4 +46,5 @@ void main(int argc, char *argv[])
 
 	close_f(ofle_from);
 	close_f(ofle_to);
+	return (0);
 }
