@@ -17,6 +17,7 @@ void close_f(int fd)
  * main - copies the contents from @argv[1] into @argv[2].
  * @argc: number of arguments given.
  * @argv: arguments given.
+ * Return: 0.
  */
 int main(int argc, char *argv[])
 {
@@ -30,11 +31,6 @@ int main(int argc, char *argv[])
 		dprintf(STDERR_FILENO, "Usage: cp file_from file_to\n");
 		exit(97);
 	}
-	if (ofle_from == -1)
-	{
-		dprintf(STDERR_FILENO, "Error: Can't read from file %s\n", argv[1]);
-		exit(98);
-	}
 
 	while ((rifle = read(ofle_from, buff, 1024)) > 0)
 		if ((write(ofle_to, buff, rifle)) < 0 || ofle_to < 0)
@@ -43,6 +39,11 @@ int main(int argc, char *argv[])
 			exit(99);
 		}
 
+	if (ofle_from == -1 || rifle == -1)
+	{
+		dprintf(STDERR_FILENO, "Error: Can't read from file %s\n", argv[1]);
+		exit(98);
+	}
 
 	close_f(ofle_from);
 	close_f(ofle_to);
