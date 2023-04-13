@@ -8,15 +8,18 @@
  */
 char *hash_table_get(const hash_table_t *ht, const char *key)
 {
-	int i = key_index((unsigned char *)key, ht->size);
+	int i;
 
-	while (ht && key && ht->array[i])
+	if (ht && key && ht->array[i])
 	{
-		if (!strcmp(ht->array[i]->key, key))
+		while (ht->array[i])
 		{
-			return (ht->array[i]->value);
+			if (!strcmp(ht->array[i]->key, key))
+			{
+				return (ht->array[i]->value);
+			}
+			i++;
 		}
-		i++;
 	}
 	return (NULL);
 }
