@@ -10,8 +10,9 @@ char *hash_table_get(const hash_table_t *ht, const char *key)
 {
 	int i;
 
-	if (ht && key && ht->array[i])
+	if (ht && key)
 	{
+		i = key_index((unsigned char *)key, ht->size);
 		while (ht->array[i])
 		{
 			if (!strcmp(ht->array[i]->key, key))
