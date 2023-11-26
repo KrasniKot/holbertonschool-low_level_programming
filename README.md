@@ -3,7 +3,6 @@
 ## Projects:
 
 ### C - Hello, World (./hello_world):
-#### General
 * Why C programming is awesome
 * Who invented C
 * Who are Dennis Ritchie, Brian Kernighan and Linus Torvalds
@@ -19,7 +18,6 @@
 * How does the main function influence the return value of the program
 
 ### C - Variables, if, else, while (./variables_if_else_while):
-#### General
 * What are the arithmetic operators and how to use them
 * What are the logical operators (sometimes called boolean operators) and how to use them
 * What the the relational operators and how to use them
@@ -36,7 +34,7 @@
 * What is the `ASCII` character set
 * What are the purpose of the `gcc` flags `-m32` and `-m64`
 
-### C - Functions, nested loops (functions_nested_loops):
+### C - Functions, nested loops (./functions_nested_loops):
 * What are nested loops and how to use them
 * What is a function and how do you use functions
 * What is the difference between a declaration and a definition of a function
@@ -44,6 +42,14 @@
 * Scope of variables
 * What are the `gcc` flags `-Wall -Werror -pedantic -Wextra -std=gnu89`
 * What are header files and how to to use them with `#include`
+
+### C - Makefiles(./makefiles):
+- What are `make`, Makefiles
+- When, why and how to use Makefiles
+- What are rules and how to set and use them
+- What are explicit and implicit rules
+- What are the most common / useful rules
+- What are variables and how to set and use them
 
 ## AUTHOR
 Emanuel Trias
