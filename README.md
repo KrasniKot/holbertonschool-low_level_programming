@@ -43,13 +43,22 @@
 * What are the `gcc` flags `-Wall -Werror -pedantic -Wextra -std=gnu89`
 * What are header files and how to to use them with `#include`
 
-### C - Makefiles(./makefiles):
+### C - Makefiles (./makefiles):
 - What are `make`, Makefiles
 - When, why and how to use Makefiles
 - What are rules and how to set and use them
 - What are explicit and implicit rules
 - What are the most common / useful rules
 - What are variables and how to set and use them
+
+### C - More functions, more nested loops (./more_functions_nested_loops):
+- What are nested loops and how to use them
+- What is a function and how do you use functions
+- What is the difference between a declaration and a definition of a function
+- What is a prototype
+- Scope of variables
+- What are the `gcc` flags `-Wall -Werror -pedantic -Wextra -std=gnu89`
+- What are header files and how to to use them with `#include`
 
 ## AUTHOR
 Emanuel Trias
