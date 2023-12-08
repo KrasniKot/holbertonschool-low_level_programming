@@ -67,5 +67,8 @@
 - How to use strings and how to manipulate them
 - Scope of variables
 
+### C - More pointers, arrays and strings (./more_pointers_arrays_strings):
+Same as previous project :)
+
 ## AUTHOR
 Emanuel Trias
